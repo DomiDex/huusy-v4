@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export default function HomePage() {
+export default function Page() {
   return (
-    <main className="">
+    <main className="container mx-auto">
       <h1>Huusy</h1>
     </main>
   );
