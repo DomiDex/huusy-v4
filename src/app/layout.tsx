@@ -1,6 +1,6 @@
 import "~/styles/globals.css";
 import Footer from "~/components/layout/Footer";
-import { GeistSans } from "geist/font/sans";
+import { customFont } from "~/lib/fonts";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,8 +13,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>
+    <html lang="en" className={`${customFont.variable}`}>
+      <body className="font-custom">
         {children}
         <Footer />
       </body>
