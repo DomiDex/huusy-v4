@@ -71,7 +71,7 @@ export default function SignUpProForm() {
 
       <button
         type="submit"
-        className="bg-secondary-500 text-primary-950 hover:bg-secondary-600 focus:ring-secondary-500 disabled:hover:bg-secondary-600 w-full rounded-lg px-4 py-3 font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50"
+        className="bg-secondary-500 text-primary-50 hover:bg-secondary-600 focus:ring-secondary-500 disabled:hover:bg-secondary-600 w-full rounded-lg px-4 py-3 font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50"
       >
         Create Account
       </button>

@@ -1,10 +1,11 @@
 import Section from "~/components/ui/Section";
 import Image from "next/image";
+import TabsAuth from "~/components/auth/TabsAuth";
 
-export default function page() {
+export default function Page() {
   return (
     <Section
-      className="relative h-screen"
+      className="relative"
       containerClassName="container mx-auto flex flex-col items-center justify-center"
     >
       <Image
@@ -15,10 +16,11 @@ export default function page() {
         priority
         quality={100}
       />
-      <div className="bg-primary-50/30 flex w-full max-w-md flex-col items-center justify-center rounded-lg p-4 shadow-md backdrop-blur-md">
-        <h1 className="text-foreground text-2xl font-medium md:text-4xl">
-          Pro Sign In
+      <div className="bg-primary-950/50 flex w-full max-w-2xl flex-col justify-center space-y-4 rounded-2xl p-8 shadow-md backdrop-blur-md">
+        <h1 className="text-primary-50 text-center text-2xl font-medium md:text-3xl">
+          Welcome to Huusy
         </h1>
+        <TabsAuth />
       </div>
     </Section>
   );
