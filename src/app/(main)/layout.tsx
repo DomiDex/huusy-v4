@@ -1,12 +1,14 @@
-import MainHeader from "~/components/layout/MainHeader";
+import Footer from "~/components/layout/Footer";
 
 export default function MainLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <>
-      <MainHeader />
       {children}
+      <Footer />
     </>
   );
 }
